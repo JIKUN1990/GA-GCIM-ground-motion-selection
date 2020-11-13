@@ -73,7 +73,7 @@ A(A(jjtemp==999))=[]
 
 %%Paramters for GA algorithm
 N = 600; %population size
-N_chrom = 30; %number of chromosome£¨30 ground motions as an individual£©
+N_chrom = 30; %number of chromosomeÂ£Â¨30 ground motions as an individualÂ£Â©
 iter = 2000; %Maximum generations
 mut = 0.01;  %Mutation probability
 acr = 0.6; %Cross over probability
@@ -88,7 +88,7 @@ chrom_best = zeros(1, N_chrom+1);% best individual
 
 % Initialization
 [chrom,location]  = Initialize(N, N_chrom,A);
-fitness= CalFitness(chrom, N,A1,lgmean,logstd); %Calculate the fitness value£»
+fitness= CalFitness(chrom, N,A1,lgmean,logstd); %Calculate the fitness valueÂ£Â»
 chrom_best = FindBest(chrom, fitness, N_chrom); %Find best individual
 fitness_best(1) = chrom_best(end);
 
@@ -135,7 +135,7 @@ break
 end
 end
 
-location1=find(Hy==2)
+location1=find(Hy==1)
 TT=location1(end)
 chrom_best=Finalchrom{TT,1}
 for i=1:30
